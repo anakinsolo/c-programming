@@ -1,0 +1,21 @@
+#include <stdio.h>
+/* Copy input to output, replace each string of one or more blank 
+   by a single blank */
+main()
+{
+  int blank, input;
+  blank = 0;
+  while ((input=getchar()) != EOF){
+	if (input == '\n'){
+	  printf("blanks: %d\n", blank);
+	  blank = 0;
+	  putchar(input)
+	}
+	if ((input == ' ') && (input != '\n')){
+	  ++blank;
+	  input = ' ';
+	}
+	/* printf("blanks: %d\n", blank); */
+  }
+  /* printf("blanks: %d\n", blank); */
+}

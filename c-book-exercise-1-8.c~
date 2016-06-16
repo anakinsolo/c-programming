@@ -1,0 +1,11 @@
+#include <stdio.h>
+/* count line, blank, space in input */
+main(){
+  int c, nl;
+  nl = 0;
+  while ((c=getchar()) != EOF){
+	if (c=="\n")
+	  ++nl;
+  }
+  print("%d\n", nl);
+}

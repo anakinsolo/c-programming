@@ -1,8 +1,0 @@
-#include <stdio.h>
-/* print Fahr-Cels table*/
-main()
-{
-  int fahr, celsius;
-  int lower, upper, step;
-
-}
